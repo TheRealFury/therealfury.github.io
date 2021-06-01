@@ -8,23 +8,39 @@
         }
     </style>
     <style>
-      .myDiv {
+      .sideDiv {
         border: 1px outset black;
         background-color: white;
         text-align: center;
-        width: 135;
-        height: 800;
+        width: 120;
+        height: 400;
+      }
+    </style>
+    <style>
+      .mainDiv {
+        border: 1px outset black;
+        background-color: white;
+        text-align: left;
+        width: 1220;
+        height: 400;
       }
     </style>
     <a href="https://ayushbhatt.in"><img src="AyushLogo.png" alt="logo" height="9%" width="9%" style="float:left"></a>
     <br> &nbsp; &nbsp;
     <a href="https://ayushbhatt.in/About-Me"><button>About Me</button></a> &nbsp; &nbsp;
     <a><button>Games</button></a> &nbsp; &nbsp;
-    <a><button>My Blog</button></a> <br><br>
+    <a><button>My Blog</button></a> &nbsp; &nbsp;
+    <a><button>Contact Me</button></a> <br><br>
     <hr>
-    <p>Well! Hi there! I am Ayush Bhatt. I am a programmer, and I love to make games. I own this site, and it is still in development 😅. To pass the time, you can press the button below. It will redirect you to a game.</p>
-    <a href="https://ayushbhatt.in/AtariBreakoutReloaded"><button>Start Game</button></a>
 </head>
 <body>
+  <div style="display: flex; flex-direction: row;" hidden>
+    <div class="sideDiv">
+    </div> &nbsp;
+    <div class="mainDiv">
+      <p>Well! Hi there! I am Ayush Bhatt. I am a programmer, and I love to make games. I own this site, and it is still in development 😅. To pass the time, you can press the button below. It will redirect you to a game.</p>
+      <a href="https://ayushbhatt.in/AtariBreakoutReloaded"><button>Start Game</button></a>
+    </div>
+  </div>
 </body>
 </html>
