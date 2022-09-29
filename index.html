@@ -1,64 +1,97 @@
-<html>
-<head>
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- HTML Specifics -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title of the Webpage -->
     <title>Ayush Bhatt</title>
+
+    <!-- Reference to Bootstrap CSS Files -->
+    <link href="./bootstrap.min.css" rel="stylesheet">
+    <link href="./headers.css" rel="stylesheet">
+    <link href="./heroes.css" rel="stylesheet">
+
     <style>
-        img {
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-        }
-    </style>
-    <style>
-      .sideDiv {
-        border: 1px outset black;
-        background-color: white;
-        text-align: center;
-        width: 120;
-        height: 400;
+      .breaker{
+        width: 100%;
+        height: 50px;
       }
     </style>
-    <style>
-      .mainDiv {
-        border: 1px outset black;
-        background-color: white;
-        text-align: left;
-        width: 1220;
-        height: 400;
-      }
-    </style>
-    <a href="https://ayushbhatt.in"><img src="AyushLogo.png" alt="logo" height="9%" width="9%" style="float:left"></a>
-    <br> &nbsp; &nbsp;
-    <a href="https://ayushbhatt.in/About-Me"><button>About Me</button></a> &nbsp; &nbsp;
-    <a href="https://ayushbhatt.in/My-Achievements"><button>My Achievements</button></a> &nbsp; &nbsp;
-    <a href="https://ayushbhatt.in/Contact-Me"><button>Contact Me</button></a> <br><br>
-    <hr style="height:4px;background-color:black">
-</head>
-<body bgcolor="lightblue">
-  <div style="display: flex; flex-direction: row;" hidden>
-    <div class="sideDiv" style="background-color: lightgreen;">
-      <br> <a href="https://ayushbhatt.in"><button>Home Page</button></a>
-      <br> <br> <a href="https://ayushbhatt.in/Games"><button>Games</button></a>
-    </div> &nbsp;
-    <div class="mainDiv" style="background-color:bisque;">
-      <h1> &nbsp; &nbsp; Welcome!</h1>
-      <p> &nbsp; &nbsp; Well! Hi there! I am Ayush Bhatt. I am a programmer, and I own this site. You can view some games to pass the time on the "Games" page.</p>
-      <p> &nbsp; &nbsp; There is a chatbot at the bottom right on every page. You can talk to it in case of any problems. The chatbot automatically records the session, so I can view all the things that you typed. Since the chatbot has been added recently, it is not very good at responding to questions. I request you mail me if you face any problems. My contact details are in the "Contact Me" page.</p>
-      <p> &nbsp; &nbsp; If you want to request for a feature, please access the chatbot and do the same.</p>
-      <p> &nbsp; &nbsp; Please visit the Blog page to learn more about my blog.</p>
-      <br> <br> <br>
-      <h3 align="center">Quote for the Month - "Life is what you think of it, how you think of it."</h3>
-      <br> <br>
-      <hr>
-      <marquee><p style="color: orangered;">New game added! : Check out the Typing Game in the Games Page! &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The new typing game improves your skills! Press the correct key as fast as possible and compete with your friends to achieve the highest score!</p></marquee>
-    </div>
-  </div>
-  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-<df-messenger
-  chat-icon="https:&#x2F;&#x2F;www.google.com&#x2F;imgres?imgurl=https%3A%2F%2Fscx2.b-cdn.net%2Fgfx%2Fnews%2Fhires%2F2019%2F3-robot.jpg&ampimgrefurl=https%3A%2F%2Ftechxplore.com%2Fnews%2F2021-01-ces-robots.html&amptbnid=k5j75H3TlCaAiM&ampvet=12ahUKEwi80YrJkf3wAhX6k0sFHdrrBJYQMygKegUIARDsAQ..i&ampdocid=0DMYMUlwbbntyM&ampw=1920&amph=1771&ampq=robot&ampved=2ahUKEwi80YrJkf3wAhX6k0sFHdrrBJYQMygKegUIARDsAQ"
-  intent="WELCOME"
-  chat-title="WebAgent"
-  agent-id="ecf17201-eb5b-4308-afa7-508d27e12b07"
-  language-code="en"
-></df-messenger>
-</body>
+
+  </head>
+  <body style="background-color:white">
+      <!-- Top Navigation Bar -->
+      <div class="container" style="background-color:white">
+        <header class="d-flex flex-wrap justify-content-center py-2 mb-3 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          
+            <span class="fs-4">Ayush Bhatt</span>
+          </a>
+
+          <!-- Page Link Names and URLs -->
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About Me</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Achievements</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">My Projects</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact me</a></li>
+          </ul>
+        </header>
+      </div>
+
+      <!-- Breaker -->
+      <div style="background-color: lightgrey;" class="breaker"></div>
+
+      <!-- Centered Main Attraction -->
+      <div class="px-4 py-0 my-5 text-center">
+        <img class="d-block mx-auto mb-4" src="./whoiam.gif" alt="" width="576" height="130">
+        <h1 class="display-5 fw-bold">Hi there!</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">I'm Ayush Bhatt, a 10th grader (for now) and tech enthusiast. This is my webiste created from bits and pieces of Bootstrap examples and my own make-do knowledge of web scripting. If you're bored enough reading a dull intro to a teenager's website, have a look around!</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">About Me</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">My Achievements</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Breaker -->
+      <div style="background-color: lightgrey;" class="breaker"></div>
+
+      <!-- Hero about Atari Breakout -->
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="./atari.gif" class="d-block mx-lg-auto img-fluid" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Wanna play?</h1>
+            <p class="lead">I like coding for fun, mostly games. I am currently on a recreating-retro-games fever, the first product of which was this remake of Atari Breakout. It was mainly made using the p5JS library, and a little bit of pure JS logic. It has a few bugs and wrinkles that need to be ironed out, but I'm working on a better version of it. It looks terrible, aesthetics-wise, but ¯\_(ツ)_/¯</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Play</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">View on GitHub</button>
+            </div>
+            <br> <br>
+            <p class="lead">I made a few other games too, check them out!</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">More Games</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End of page -->
+      <div style="background-color: lightslategray">
+        <br>
+        <p style="text-align:center;color:black;font-size:13px;">This site uses Bootstrap.</p>
+        <br><br><br><br><br><br>
+      </div>
+    </main>
+
+    <!-- Link to Bootstrap JS File -->
+    <script src="./bootstrap.bundle.min.js"></script>
+  </body>
 </html>
